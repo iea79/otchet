@@ -1,19 +1,36 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	background-color: #ccc;
-	padding: 10px 0;
+	background-color: #fff;
+	padding: 6px 0 20px;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
 	@extend %clear_a;
 	&__logo {
 		float: left;
 		width: 150px;
 	}
+	&__logo {
+
+	}
+	&__user {
+		display: table-cell;
+		float: right;
+		margin-top: 29px;
+		.icon {
+			display: table-cell;
+		}
+		&Name {
+			display: table-cell;
+			padding-left: 10px;
+		}
+	}
 }
 
 // stiky menu
 .stiky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// width: 100%;
 }

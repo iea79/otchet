@@ -3,11 +3,13 @@
 .footer {
 	position: relative;
 	height: $footer_height;
-	background: #BFF08E;
 	@extend %clear_all;
 	.container_center {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+	.copy a {
+		color: #fff;
 	}
 }
 

@@ -79,17 +79,20 @@ input[type=checkbox],
 input[type=radio] {
 	padding: 0;
     display: inline-block;
-    height: 14px;
-    width: 14px;
-    border: 1px solid #aaa;
+    height: 17px;
+    width: 17px;
+    // border: 1px solid #aaa;
+    border: 2px solid #e2e2e2;
+    position: relative;
+    border-radius: 3px;
     overflow: hidden;
-    margin-top: -4px;
-    vertical-align: middle;
+    vertical-align: sub;
     -webkit-appearance: none;
     outline: 0;
     background: 0 0;
     text-align: center;
     position: relative;
+    margin-right: 5px;
 	&:not(:disabled),
 	&:not(:disabled) {
 	    cursor: pointer;
@@ -117,7 +120,7 @@ input[type=radio] {
 	    display: block;
 	    position: absolute;
 	    border-radius: 50%;
-	    background: #000;
+	    background: #2fb4e9;
 	}
 	&:disabled:checked:before {
 	    background-color: #aaa;
@@ -125,22 +128,22 @@ input[type=radio] {
 }
 
 input[type=checkbox] {
-	&:checked:before,
-	&:indeterminate:before {
-	    content: "\2714";
-	    font-size: 12px;
+	&:checked,
+	&:indeterminate {
+	    background: url('../img/check.png') no-repeat center center;
 	    -webkit-font-smoothing: antialiased;
-	    text-align: center;
-	    line-height: 13px;
-	    color: #000;
+	    background-color: #2fb4e9;
+	    border: 2px solid #2fb4e9;
 	}
 
-	&:indeterminate:before {
-	    content: "\f068";
-	}
 	&:disabled:checked:before,
 	&:disabled:indeterminate:before {
 	    color: #aaa;
+	}
+	&:disabled {
+		background: url('../img/disabled.png') no-repeat center center;
+		background-color: #ededed;
+		border: 2px solid #ededed;
 	}
 }
 
